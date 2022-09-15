@@ -1,23 +1,40 @@
 <script>
+	import ProjectList from './components/ProjectList.svelte';
+	import Banner from './components/Banner.svelte';
+
 	let firstName = 'Luke';
 	let lastName = 'Moore';
 	let color = "blue";
-	let showText = false;
 
 	$: name = firstName + ' ' + lastName;
 
 	const toggle = () => {
 		color = color === 'blue' ? 'red' : 'blue';
-		showText = !showText;
 	}
+
+	const projects = [
+		{
+			id: 1,
+			desc: "Example description 1."
+		},
+		{
+			id: 2,
+			desc: "Example description 2."
+		},
+		{
+			id: 3,
+			desc: "Example description 3."
+		},
+	];
+
 </script>
 
 <main>
+	<Banner />
 	<h1 style="color: {color}">Hello {name}!</h1>
-	{#if showText}
-		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	{/if}
-	<button on:click={toggle}>Click me!</button>
+	<button on:click={toggle} class="btn">Click me!</button>
+	<ProjectList {projects} />
+
 </main>
 
 <style>
@@ -25,6 +42,11 @@
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
+		margin: 0 auto;
+	}
+
+	.btn {
+		display: block;
 		margin: 0 auto;
 	}
 
