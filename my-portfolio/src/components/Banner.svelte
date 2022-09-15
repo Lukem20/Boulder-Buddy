@@ -1,8 +1,11 @@
 <script>
-
+    import Logo from "./Logo.svelte"
 </script>
 
-    <div class="bannerBox"><img class="center-fit" src="assets/banner.png" alt="Desert background graphic" /></div>
+<div class="bannerBox">
+    <Logo />
+    <img class="center-fit" src="assets/banner.png" alt="Desert background graphic" />
+</div>
 
 <style>
 

@@ -30,10 +30,13 @@
 </script>
 
 <main>
+
 	<Banner />
+	
+	<ProjectList {projects} />
+
 	<h1 style="color: {color}">Hello {name}!</h1>
 	<button on:click={toggle} class="btn">Click me!</button>
-	<ProjectList {projects} />
 
 </main>
 
