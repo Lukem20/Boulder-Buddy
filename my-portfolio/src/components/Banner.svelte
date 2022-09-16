@@ -3,33 +3,28 @@
     import SearchBar from "./SearchBar.svelte"
 </script>
 
-<div class="centerBox">
+<div class="container">
     <Logo />
     <img class="center-fit" src="assets/banner.png" alt="Desert background graphic" />
-    <h1>Rock Buddy, an outdoor climbing guide.</h1>
-    <SearchBar />
-
+    <div class="banner-intro">
+        <h1>Rock Buddy, an outdoor climbing guide.</h1>
+        <SearchBar />
+    </div>
 </div>
 
 <style>
 
-    h1 {
+    .banner-intro {
 		color: aliceblue;
 		/*text-transform: uppercase;*/
-		font-size: 3em;
-		font-weight: 100;
+		font-size: 1.5em;
         position: relative;
-        margin: 0 auto;
-        bottom: 2em;
+        bottom: 6em;
     }
 
-    .centerBox {
-            display: grid;
-            height: 100%;
-        }
-        .center-fit {
-            max-width: 100%;
-            object-fit:contain;
-        }
+    .center-fit {
+         max-width: 100%;
+         object-fit:contain;
+    }
 
 </style>
