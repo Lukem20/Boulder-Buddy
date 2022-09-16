@@ -1,6 +1,6 @@
 <script>
 	import Banner from './components/Banner.svelte';
-
+	import Card from './components/Card.svelte'
 	let color = "blue";
 	const toggle = () => {
 		color = color === 'blue' ? 'red' : 'blue';
@@ -13,23 +13,27 @@
 	<Banner />
 	
     <!-- <ProjectList {projects} /> -->
-
-	<h1 style="color: {color}">Welcome!</h1>
-	<button on:click={toggle} class="btn">Click me!</button>
+	<Card>
+		<h1 style="color: {color}">Welcome!</h1>
+		<button on:click={toggle} class="btn">Click me!</button>
+	</Card>
+	
 
 </main>
 
 <style>
 	main {
 		text-align: center;
-		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
+		padding: 0 !important;
+		background-color: #294936;
 	}
 
 	.btn {
 		display: block;
-		margin: 0 auto;
+		margin: 2rem auto;
+		background: none;
+		padding: 0.75em 1em;
 	}
 
 	h1 {

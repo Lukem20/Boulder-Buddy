@@ -4,11 +4,10 @@
 
 <style>
     .card {
-        background-color: #212922;
+        background-color: aliceblue;
         color: white;
         border-radius: 15px;
-        padding: 40px 50px;
-        margin: 20px 0;
-        position: relative;
+        padding: 4em 5em;
+        margin: 2em 1em;
     }
 </style>
