@@ -11,10 +11,8 @@
 <main>
 
 	<Banner />
-	
-    <!-- <ProjectList {projects} /> -->
 	<Card>
-		<h1 style="color: {color}">Welcome!</h1>
+		<h2 style="color: {color}">Welcome!</h2>
 		<button on:click={toggle} class="btn">Click me!</button>
 	</Card>
 	
@@ -23,6 +21,7 @@
 
 <style>
 	main {
+		max-width: none;
 		text-align: center;
 		margin: 0 auto;
 		padding: 0 !important;
@@ -35,16 +34,5 @@
 		background: none;
 		padding: 0.75em 1em;
 	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-		main {
-			max-width: none;
-		}
 	
 </style>
