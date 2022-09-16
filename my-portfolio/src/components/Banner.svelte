@@ -2,21 +2,19 @@
     import Logo from "./Logo.svelte"
 </script>
 
-<div class="bannerBox">
+<div class="centerBox">
     <Logo />
     <img class="center-fit" src="assets/banner.png" alt="Desert background graphic" />
 </div>
 
 <style>
-
-    .bannerBox {
+    .centerBox {
             display: grid;
             height: 100%;
         }
         .center-fit {
             max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
+            object-fit:contain;
         }
 
 </style>
