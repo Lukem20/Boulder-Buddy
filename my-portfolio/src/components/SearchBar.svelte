@@ -2,12 +2,12 @@
 
 </script>
 
-<input type="text" placeholder="Search routes or boulders...">
+<input type="text" placeholder="Search routes or boulders »">
 
 <style>
 
     input[type=text] {
-        padding: 0.75em 1.5em;
+        padding: 0.8em 1.5em;
         font-size: 18px;
         position: relative;
         margin: 0 auto;

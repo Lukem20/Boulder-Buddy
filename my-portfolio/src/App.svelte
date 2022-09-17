@@ -1,6 +1,9 @@
 <script>
+
 	import Banner from './components/Banner.svelte';
-	import Card from './components/Card.svelte'
+	import Card from './components/Card.svelte';
+	import Section from './components/Section.svelte';
+
 	let color = "blue";
 	const toggle = () => {
 		color = color === 'blue' ? 'red' : 'blue';
@@ -15,11 +18,12 @@
 		<h2 style="color: {color}">Welcome!</h2>
 		<button on:click={toggle} class="btn">Click me!</button>
 	</Card>
-	
+	<Section />
 
 </main>
 
 <style>
+
 	main {
 		max-width: none;
 		text-align: center;
@@ -34,10 +38,5 @@
 		background: none;
 		padding: 0.75em 1em;
 	}
-
-
-
-		main {
-		}
 	
 </style>

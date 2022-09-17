@@ -5,9 +5,6 @@
 <style>
     .card {
         background-color: aliceblue;
-        color: white;
-        border-radius: 15px;
-        padding: 4em 5em;
-        margin: 2em 1em;
+        height: 50vh;
     }
 </style>
