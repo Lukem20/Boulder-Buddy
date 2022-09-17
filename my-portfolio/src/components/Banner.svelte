@@ -1,13 +1,14 @@
 <script>
-    import Logo from "./Logo.svelte"
-    import SearchBar from "./SearchBar.svelte"
+    import Logo from "./Logo.svelte";
+    import Title from "./Title.svelte";
+    import SearchBar from "./SearchBar.svelte";
 </script>
 
 <div class="container">
     <Logo />
     <img class="center-fit" src="assets/banner2.png" alt="Desert background graphic" />
     <div class="banner-intro">
-        <h1>Rock Buddy, an outdoor climbing guide.</h1>
+        <Title />
         <SearchBar />
     </div>
 </div>
