@@ -22,10 +22,8 @@
         position: relative;
         bottom: 6em;
     }
-
     .center-fit {
          max-width: 100%;
          object-fit:contain;
     }
-
 </style>
