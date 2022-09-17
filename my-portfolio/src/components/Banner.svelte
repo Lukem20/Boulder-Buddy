@@ -5,7 +5,7 @@
 
 <div class="container">
     <Logo />
-    <img class="center-fit" src="assets/banner.png" alt="Desert background graphic" />
+    <img class="center-fit" src="assets/banner2.png" alt="Desert background graphic" />
     <div class="banner-intro">
         <h1>Rock Buddy, an outdoor climbing guide.</h1>
         <SearchBar />
@@ -13,6 +13,7 @@
 </div>
 
 <style>
+
 
     .banner-intro {
 		color: aliceblue;
