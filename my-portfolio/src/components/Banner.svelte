@@ -14,16 +14,17 @@
 
 <style>
 
-
     .banner-intro {
 		color: aliceblue;
 		/*text-transform: uppercase;*/
 		font-size: 1.5em;
         position: relative;
-        bottom: 6em;
+        bottom: 8em;
     }
+    
     .center-fit {
          max-width: 100%;
          object-fit:contain;
     }
+
 </style>
