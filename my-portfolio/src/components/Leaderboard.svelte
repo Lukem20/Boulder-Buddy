@@ -2,13 +2,27 @@
 
 </script>
 
-<div class="card">
-    <slot></slot>
+<div class="leaderboard">
+    <h4>Most popular climbs this week:</h4>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ol>
 </div>
 
 <style>
-    .card {
+    .leaderboard {
         background-color: aliceblue;
-        height: 70vh;
+        height: 40vh;
+
     }
 </style>
