@@ -15,6 +15,8 @@
         border-radius: 15px;
         background-color: aliceblue;
         transition: padding 0.2s ease-in-out;
+        cursor: pointer;
+
     }
 
     input[type=text]:focus {

@@ -1,8 +1,7 @@
 <script>
-
 	import Banner from './components/Banner.svelte';
-	import Card from './components/Card.svelte';
-	import Section from './components/Section.svelte';
+	import Leaderboard from './components/Leaderboard.svelte';
+	import MtnSection from './components/MtnSection.svelte';
 
 	let color = "blue";
 	const toggle = () => {
@@ -12,18 +11,16 @@
 </script>
 
 <main>
-
 	<Banner />
-	<Card>
+	<Leaderboard>
 		<h2 style="color: {color}">Welcome!</h2>
 		<button on:click={toggle} class="btn">Click me!</button>
-	</Card>
-	<Section />
+	</Leaderboard>
+	<MtnSection />
 
 </main>
 
 <style>
-
 	main {
 		max-width: none;
 		text-align: center;
